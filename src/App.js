@@ -1,17 +1,17 @@
-import React from 'react';
-import Header from './components/Header';
-import Middle from './components/Middle';
-import WordSection from './components/WordSection';
-import './App.css';
+import React from 'react'
+import Header from './components/Header'
+import Middle from './components/Middle'
+import WordSection from './components/WordSection'
+import './App.css'
 
 function App() {
-  return (
-    <div className="h-screen flex flex-col">
-      <Header />
-      <Middle />
-      <WordSection />
-    </div>
-  );
+	return (
+		<div className="h-screen flex flex-col">
+			<Header />
+			<Middle />
+			<WordSection />
+		</div>
+	)
 }
 
-export default App;
+export default App

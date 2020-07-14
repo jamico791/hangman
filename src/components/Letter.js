@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Letter = () => {
+const Letter = props => {
 	return (
-		<div>
-			<button>A</button>
-		</div>
+		<button className="bg-orange-300 font-bold text-2xl">
+			{props.letter}
+		</button>
 	)
 }
 

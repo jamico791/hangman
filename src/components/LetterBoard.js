@@ -5,7 +5,7 @@ const LetterBoard = () => {
 	const createLetter = letter => <Letter letter={letter} />
 
 	return (
-		<div className="flex-1 bg-blue-300 grid grid-cols-10 gap-3">
+		<div className="flex-1 bg-blue-300 grid grid-cols-8 gap-8">
 			{createLetter('A')}
 			{createLetter('B')}
 			{createLetter('C')}

@@ -2,7 +2,6 @@ import React from 'react'
 import Header from './components/Header'
 import Middle from './components/Middle'
 import WordSection from './components/WordSection'
-import './App.css'
 
 function App() {
 	return (

@@ -3,7 +3,13 @@ import Slot from './Slot';
 
 const WordSection = () => {
 	return (
-		<div className="flex flex-col container mx-auto h-64 bg-red-500">
+		<div className="flex flex-row gap-3 items-center justify-center container mx-auto h-64 bg-red-500">
+            <Slot />
+            <Slot />
+            <Slot />
+            <Slot />
+            <Slot />
+            <Slot />
             <Slot />
 		</div>
 	)

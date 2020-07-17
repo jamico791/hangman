@@ -1,8 +1,8 @@
 import React from 'react'
 import Letter from './Letter'
 
-const LetterBoard = () => {
-	const createLetter = (letter) => <Letter letter={letter} />
+const LetterBoard = (props) => {
+	const createLetter = (letter) => <Letter handleClick={props.handleClick} buttons={props.buttons} letter={letter} />
 
 	return (
 		<div className="flex-1 bg-blue-300 grid grid-cols-8 gap-8">

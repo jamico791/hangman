@@ -2,7 +2,14 @@ import React from 'react'
 import Letter from './Letter'
 
 const LetterBoard = (props) => {
-	const createLetter = (letter) => <Letter handleClick={props.handleClick} buttons={props.buttons} letter={letter} />
+	const createLetter = (letter) => (
+		<Letter
+			handleClick={props.handleClick}
+			buttons={props.buttons}
+			letter={letter}
+			outcome={props.outcome}
+		/>
+	)
 
 	return (
 		<div className="flex-1 bg-blue-300 grid grid-cols-8 gap-8">

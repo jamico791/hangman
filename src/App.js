@@ -8,14 +8,7 @@ import words from './assets/words'
 function App() {
 	/* State Declarations */
 	const [word, setWord] = useState('')
-	const [person, setPerson] = useState({
-		head: false,
-		body: false,
-		leftArm: false,
-		rightArm: false,
-		leftLeg: false,
-		rightLeg: false
-	})
+	const [person, setPerson] = useState([])
 	const [buttons, setButtons] = useState({
 		'A': false,
 		'B': false,
@@ -43,6 +36,7 @@ function App() {
 		'Y': false,
 		'Z': false
 	});
+	const [outcome, setOutcome] = useState(0);
 
 	/* Lifecycle Methods */
 	useEffect(() => {
@@ -58,7 +52,13 @@ function App() {
 			...prevButtons,
 			[value]: !prevButtons[value]
 		}))	
-		console.log(word)
+		if (!word.includes(value.toLowerCase())) {
+			setPerson(prevPerson => {
+				const temp = [...prevPerson]
+				temp.push(1)
+				return temp
+			})
+		}	
 	}
 
 	return (

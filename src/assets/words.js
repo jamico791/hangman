@@ -158,7 +158,6 @@ const words = [
     "until",
     "mile",
     "river",
-    "car",
     "feet",
     "care",
     "second",

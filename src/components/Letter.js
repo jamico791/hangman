@@ -3,7 +3,11 @@ import React from 'react'
 const Letter = (props) => {
 
 	if (props.buttons[props.letter]) {
-		return <div className="h-24 w-24"></div>
+		return (
+			<div className="h-24 w-24 text-5xl font-bold text-red-500 flex items-center justify-center rounded-lg border-4">
+				<p className="text-red-500 font-bold text-5xl">{props.letter}</p>	
+			</div>
+		)
 	}
 
 	return (

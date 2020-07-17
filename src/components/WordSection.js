@@ -28,7 +28,7 @@ const WordSection = (props) => {
 					className="bg-blue-500 text-white text-lg font-bold px-8 py-4 rounded-lg ml-16 hover:bg-blue-400"
 					onClick={props.handleReset}
 				>
-					Reset
+					New Word
 				</button>
 			)}
 		</div>

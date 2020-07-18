@@ -40,9 +40,8 @@ function App() {
 
 	/* Lifecycle Methods */
 	useEffect(() => {
-		const longWords = words.filter(word => word.length > 4)
-		const num = Math.floor(Math.random() * longWords.length)
-		setWord(longWords[num])
+		const num = Math.floor(Math.random() * words.length)
+		setWord(words[num])
 	}, [])
 
 	useEffect(() => {
@@ -78,9 +77,8 @@ function App() {
 	}
 
 	const handleReset = () => {
-		const longWords = words.filter(word => word.length > 4)
-		const num = Math.floor(Math.random() * longWords.length)
-		setWord(longWords[num])
+		const num = Math.floor(Math.random() * words.length)
+		setWord(words[num])
 		setPerson([])
 		setOutcome(0)
 		setButtons((prevButtons) => {
@@ -96,7 +94,7 @@ function App() {
 		<div className="h-screen flex flex-col">
 			<Header />
 
-			<div className="flex-1 flex flex-row">
+			<div className="flex-1 flex flex-col sm:flex-row">
 				<Gallows person={person} outcome={outcome}/>
 				<LetterBoard
 					handleClick={handleClick}

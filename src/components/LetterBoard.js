@@ -12,7 +12,7 @@ const LetterBoard = (props) => {
 	)
 
 	return (
-		<div className="flex-1 bg-blue-300 grid grid-cols-8 gap-8">
+		<div className="flex-1 bg-blue-300 grid grid-cols-8 gap-7">
 			{createLetter('A')}
 			{createLetter('B')}
 			{createLetter('C')}

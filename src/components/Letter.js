@@ -3,8 +3,8 @@ import React from 'react'
 const Letter = (props) => {
 	if (props.buttons[props.letter] || props.outcome === 1 || props.outcome === -1) {
 		return (
-			<div className="h-20 w-20 text-5xl font-bold text-red-500 flex items-center justify-center rounded-lg border-4">
-				<p className="text-red-500 font-bold text-5xl">
+			<div className="h-8 w-8 xl:h-20 xl:w-20 flex items-center justify-center rounded-sm xl:rounded-lg border-2 xl:border-4">
+				<p className="text-red-500 font-bold xl:text-5xl">
 					{props.letter}
 				</p>
 			</div>
@@ -13,7 +13,7 @@ const Letter = (props) => {
 
 	return (
 		<button
-			className="bg-orange-400 hover:bg-orange-300 h-20 w-20 font-bold text-5xl rounded-lg focus:outline-none"
+			className="bg-orange-400 hover:bg-orange-300 h-8 w-8 xl:h-20 xl:w-20 font-bold xl:text-5xl rounded-sm xl:rounded-lg focus:outline-none"
 			value={props.letter}
 			onClick={props.handleClick}
 		>

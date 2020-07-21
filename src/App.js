@@ -94,7 +94,7 @@ function App() {
 		<div className="h-screen flex flex-col">
 			<Header />
 
-			<div className="flex-1 flex flex-col sm:flex-row">
+			<div className="flex-1 sm:flex">
 				<Gallows person={person} outcome={outcome}/>
 				<LetterBoard
 					handleClick={handleClick}

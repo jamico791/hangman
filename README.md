@@ -4,7 +4,7 @@ A hangman game made using React and tailwind-css
 
 ## Prerequisites
 
-- npm
+- [node & npm](https://nodejs.org/en/)
 
 ## Get Started
 

@@ -18,5 +18,5 @@ $ cd hangman
 Start the react client:
 
 ```
-npm run start
+$ npm run start
 ```

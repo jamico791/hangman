@@ -15,6 +15,12 @@ $ git clone https://github.com/jamico791/hangman.git
 $ cd hangman
 ```
 
+Install dependencies:
+
+```
+$ npm install
+```
+
 Start the react client:
 
 ```
